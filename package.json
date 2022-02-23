@@ -1,0 +1,27 @@
+{
+  "name": "mustafa-najlaa-autocomplete",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": " nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-G11/Mustafa-Najlaa-autocomplete.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-G11/Mustafa-Najlaa-autocomplete/issues"
+  },
+  "homepage": "https://github.com/GSG-G11/Mustafa-Najlaa-autocomplete#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "eslint": "^8.9.0"
+  }
+}
