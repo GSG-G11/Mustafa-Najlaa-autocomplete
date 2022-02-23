@@ -39,7 +39,7 @@ inputSearch.addEventListener("keyup", () => {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
          const data = JSON.parse(xhr.response)
-         for(let i = 0 ; i<7; i++){
+         for(let i = 0 ; i<20; i++){
           const div = document.createElement('div')
           const img =document.createElement('img')
           img.classList.add('image');

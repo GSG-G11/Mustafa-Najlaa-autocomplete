@@ -35,15 +35,23 @@ body{
     cursor: pointer; ;   
 
 }
-.image{
-    flex: 3;
-    padding-top: 100px;
-    object-fit: cover;
-    max-width: 100%;
-    width: 800px;
-    height: 350px;
+ .image{
+    padding: 200px 0px 0px 00px;
 
-}
+
+  }
+    .image .column {
+        float: left;
+        width: 33.33%;
+      }
+      
+      /* Clear floats after image containers */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
 
 .container{
     width:80%;
