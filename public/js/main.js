@@ -39,15 +39,23 @@ inputSearch.addEventListener("keyup", () => {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
          const data = JSON.parse(xhr.response)
-       data.forEach(ele=>{
-         const div = document.createElement('div')
-        const img =document.createElement('img')
-        img.classList.add('image');
-        img.src =ele.urls.raw
-        div.appendChild(img)
-        contain.appendChild(div)
+         for(let i = 0 ; i<7; i++){
+          const div = document.createElement('div')
+          const img =document.createElement('img')
+          img.classList.add('image');
+          img.src =data.hits[i].previewURL
+          div.appendChild(img)
+          contain.appendChild(div)
+         }
+      //  data.hits.forEach(ele=>{
+      //    const div = document.createElement('div')
+      //   const img =document.createElement('img')
+      //   img.classList.add('image');
+      //   img.src =ele.previewURL
+      //   div.appendChild(img)
+      //   contain.appendChild(div)
        
-       })
+      //  })
          
           }
           
