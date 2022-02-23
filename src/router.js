@@ -54,22 +54,17 @@ const router = (req, res) => {
       }
     });
   } else if (url.includes("/api")) {
+    const imgKey='25715508-30ede2cb1753fb52763f43dcd'
     const word = url.split('/')[2];
     axios
       .get(
-       `https://api.unsplash.com/photos/?client_id=KxvWQVK_2a_vUtS3n6Ndjq_yrq2W0m4qoXDjTPNRhb4&query=${word}`
+       `https://pixabay.com/api/?key=${imgKey}&q=${word}&image_type=photo`
       )
       .then((response) => {
       
-        // console.log(response.data.forEach(ele => {
-        //   console.log(ele.urls.raw);
-        // }));
-        // response.data.forEach((ele) => { 
-        //   console.log(ele.urls.raw);
-      //  console.log(response.data)
+        console.log(response)
           res.writeHead(200, { "Content-Type": "text/plain" });
           res.end(JSON.stringify(response.data));
-        // });
       })
       .catch((error) => {
         console.log(error);
