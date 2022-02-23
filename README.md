@@ -1,7 +1,7 @@
 # autocomplete project
 ## Team Members:
-mostafa qanoo
-Najlaa ouda
+* mostafa qanoo
+* Najlaa ouda
 
 ## Site URL:
 [Heroku link](https://autocomplete-8.herokuapp.com/
