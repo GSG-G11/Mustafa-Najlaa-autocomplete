@@ -61,7 +61,6 @@ const router = (req, res) => {
        `https://pixabay.com/api/?key=${imgKey}&q=${word}&image_type=photo`
       )
       .then((response) => {
-      
         console.log(response)
           res.writeHead(200, { "Content-Type": "text/plain" });
           res.end(JSON.stringify(response.data));
@@ -74,6 +73,4 @@ const router = (req, res) => {
     res.end("notfound");
   }
 };
-
-
 module.exports = router;

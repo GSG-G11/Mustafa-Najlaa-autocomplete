@@ -44,8 +44,8 @@ inputSearch.addEventListener("keyup", () => {
           const img =document.createElement('img')
           img.classList.add('image');
           img.src =data.hits[i].previewURL
-          div.appendChild(img)
-          contain.appendChild(div)
+          // div.appendChild(img)
+          contain.appendChild(img)
          }
       //  data.hits.forEach(ele=>{
       //    const div = document.createElement('div')
